@@ -21,7 +21,7 @@ public class CallbackTest {
         open("http://localhost:9999");
         SelenideElement form = $("[data-test-id=callback-form]");
         form.$("[data-test-id=name] input").setValue("Васильев Василий");
-        form.$("[data-test-id=phone] input").setValue("+7927123456");
+        form.$("[data-test-id=phone] input").setValue("+79271234567");
         form.$("[data-test-id=agreement]").click();
         form.$("[data-test-id=submit]").click();
         form.$(".alert-success").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
