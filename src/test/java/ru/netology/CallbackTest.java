@@ -20,7 +20,7 @@ public class CallbackTest {
     void shouldTest() {
         open("http://localhost:9999");
         SelenideElement form = $("[data-test-id=callback-form]");
-        form.$("[data-test-id=name] input").setValue("Васильев Василий");
+        form.$("[data-test-id=name] input").setValue("Васильев Вася");
         form.$("[data-test-id=phone] input").setValue("+79271234567");
         form.$("[data-test-id=agreement]").click();
         form.$("[data-test-id=submit]").click();
